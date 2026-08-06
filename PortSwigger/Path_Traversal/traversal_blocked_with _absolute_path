@@ -1,0 +1,54 @@
+## PortSwigger Web Security Academy-Path Traversal (Absolute Path Bypass)
+
+##Lab
+Path Traversal-Traversal Sequences Blocked with Absolute path bypass
+
+##Objective
+Assess the application's file accesss control and identify a path traversal vulnerability despite implemented input restrictions.
+
+##Skills Demonstrated
+-Web Application Security Testing
+-Path Traversal Analysis
+-HTTP Request Analysis
+-Burp Suite Repeater
+-Input Validation Assessment
+
+##Environment
+-Platform:PortSwigger Web Security Academy
+-Tool:Burp Suite Community Edition 
+-Browser:Firefox 
+-Operating System:Kali Linux
+
+##Methodology
+1.Explored the application's file retrieval functionality.
+2.Captured the request using Burp Suite.
+3.Analyzed how the application validated file path input.
+4.Tested alternative file path formats within the controlled lab environment.
+5.Confirmed the path traversal vulnerability.
+6.Successfully completed the lab.
+
+##Outcome
+-Successfully identified a path Traversal vulnerability.
+-Demonstrated the impact in a controlled lab environment.
+-Successfully completed the PortSwigger lab.
+
+##Kay Learnings
+-Basic input filtering alone is not sufficient.
+-File path validation should be implemented securely.
+-Practical use of Burp Suite for request analysis.
+-Importance of secure file handling.
+
+##Security Recommendations
+-Canonicalize file paths before validates.
+-Restrict access to approved directories.
+-Use allowlists for file access.
+-Implement proper server-side validation.
+-Apply least privilege to file permissions.
+
+##Tools Used
+-Burp Suite Community Edition
+-Firefox
+-Kali Linux
+
+##Status
+Lab Successfully Completed
