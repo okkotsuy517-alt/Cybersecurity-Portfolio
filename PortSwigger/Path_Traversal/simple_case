@@ -1,0 +1,48 @@
+#PortSwigger Web Security Academy-path Treversal (Simple Case)
+
+##Lab 
+Path Traversal-Simple Case
+
+##Objective
+Identify a path traversal vulnerability in the application and demonstrate its impact within the PortSwigger lab environment
+
+##skills Demonstrated
+-Web Application Security Testing 
+-Path Traversal Identification
+-HTTP Request Analysis
+-File Access validation
+
+##Environment
+-Platform:PortSwigger Web Security Academy
+-Tool:Burp Suite Community Edition
+-Browser: Firefox
+-Operation System:Kali Linux
+
+##Methodology
+1.Explored the application's file loading functionality.
+2.Captured the HTTP request using Burp Suite.
+3.Analyzed the file path parameter.
+4.Tested for path traversal behavior in the controlled lab environment.
+5.Confirmed the vulnerability through the application's response.
+6.Successfully completed the lab.
+
+##Key Learnings
+-How path traversal vulnerabilities occur.
+-Importance of validating file paths.
+-Practice use of Burp Suite for request analysis.
+-Risks of insecure file access.
+
+##Security Recommendations
+-Validate and sanitize user-supplied file path.
+-Restrict file access to authorized directories.
+-Use allowlists for permitted file.
+-Prevent directory traversal sequences.
+-Apply the principle of least privilege.
+
+##Tools Used
+-Burp Suite Community Edition
+-Firefox
+-Kali linux
+
+## Status
+Lab Successfully Completed
