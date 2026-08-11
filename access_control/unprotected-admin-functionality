@@ -1,0 +1,55 @@
+Access Control Unprocteted Admin Functionality
+
+Platform:PortSwigger Web Security Academy
+Vulnerability:Broken access control/Unprocteted Functionality
+Difficulty:Apprentice
+Tool:Burp Suite / Web Broswer
+
+Description
+
+The application contains an administrative panel that is not properly protected by access controls.
+
+An unauthorized user can discover the admin panel location through the application's robots.txt file and access privileged functionality without proper authorization.
+
+Objective
+
+Access the adminitrative panel and delete the user carlos.
+
+Step to Reproduce
+
+1.Access the lab
+
+opened the PortSwigger Web Security Academy lab.
+
+2.Check robots.txt
+
+the response disclosed a restricted administrative path through a disallow entry.
+
+3.Access the admin panel
+
+Navigated to disclosed administrator enpoint:
+/administrator-panel
+The admin panel was accessible without proper authorization.
+
+4.Delect the User
+From the administrator panel,selected the carlos user and delected the account.
+
+5.Result
+the lab displayed:
+Congratulations,you solved the lab!
+
+Impact
+
+An attacker could access adminitrative functionality without being properly authorized. Depending on what functions are exposed,this could allow unautherized account management or other privileged actions.
+
+Remediation
+
+-Enforce server-side authorization on every administrative endpoint.
+-Do not rely on hidden URLs or robots.txt restrctions for security.
+-verity the user's role and permissions before performing privileged actions.
+-Adminitrative functionality should only be accessible to authorized users.
+
+Key Learning
+Hiding an admin URL is not access control.
+
+The application must verify authorization on the server for every privileged request.PortSwigger classfies this type of issue under vertical privilege ascalation/unprocteted funcationalty.
